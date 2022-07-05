@@ -1,0 +1,114 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body{
+	font-family: 'Roboto', sans-serif;
+}
+
+img{
+	max-width: 100%;
+}
+
+.content{
+	width: 90%;
+	margin: 0 auto;
+}
+
+.title{
+	text-align: center;
+    margin: 5rem 0;
+    font-weight: 300;
+}
+
+.container-card{
+	 display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.card{
+	display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 2rem 1rem;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    width: 90%;
+    padding: 2rem;
+}
+
+.card__title{
+	font-size: 2.5rem;
+    font-weight: 500;
+}
+
+.card__price{
+	font-size: 1.6rem;
+    margin-top: 1rem;
+}
+
+.card__btn{
+	margin-top: 2rem;
+    display: inline-block;
+    background-color: #e62b1e;
+    color: #fff;
+    text-decoration: none;
+    padding: .8rem 5rem;
+    font-weight: 900;
+    text-transform: uppercase;
+    transition: background-color .5s;
+}
+
+.card__btn:hover{
+	background-color: #ab2016;
+}
+
+.carrito-container{
+	margin: 4rem;
+}
+
+.carrito{
+	display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.carrito  > *{
+	margin: 1rem;
+}
+
+.carrito img{
+	width: 300px;
+}
+
+@media (max-width: 450px){
+	.carrito {
+		flex-direction: column
+	}
+}
+
+@media (min-width: 500px){
+	.card{
+		width: 55%
+	}
+}
+
+@media (min-width: 768px){
+
+	.container-card{
+		justify-content: space-between
+	}
+
+
+	.card{
+		width: 40%
+	}
+}
+
+@media (min-width: 1024px){
+	.card{
+		width: 28%
+	}
+}
